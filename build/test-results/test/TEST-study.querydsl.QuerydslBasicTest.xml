@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="study.querydsl.QuerydslBasicTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-01-04T06:42:47" hostname="gim-yulhuiui-MacBook-Pro.local" time="1.094">
+<testsuite name="study.querydsl.QuerydslBasicTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-05T07:30:54" hostname="gim-yulhuiui-MacBook-Pro.local" time="0.813">
   <properties/>
-  <testcase name="startJPQL()" classname="study.querydsl.QuerydslBasicTest" time="0.814"/>
-  <testcase name="startQuerydsl()" classname="study.querydsl.QuerydslBasicTest" time="0.278"/>
-  <system-out><![CDATA[15:42:39.742 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-15:42:39.760 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-15:42:39.813 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [study.querydsl.QuerydslBasicTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-15:42:39.832 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [study.querydsl.QuerydslBasicTest], using SpringBootContextLoader
-15:42:39.839 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [study.querydsl.QuerydslBasicTest]: class path resource [study/querydsl/QuerydslBasicTest-context.xml] does not exist
-15:42:39.840 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [study.querydsl.QuerydslBasicTest]: class path resource [study/querydsl/QuerydslBasicTestContext.groovy] does not exist
-15:42:39.840 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [study.querydsl.QuerydslBasicTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-15:42:39.841 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [study.querydsl.QuerydslBasicTest]: QuerydslBasicTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-15:42:39.930 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [study.querydsl.QuerydslBasicTest]
-15:42:40.012 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/kim-yulhee/Spring-Study/querydsl/build/classes/java/main/study/querydsl/QuerydslApplication.class]
-15:42:40.013 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration study.querydsl.QuerydslApplication for test class study.querydsl.QuerydslBasicTest
-15:42:40.206 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [study.querydsl.QuerydslBasicTest]: using defaults.
-15:42:40.207 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-15:42:40.245 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2102a4d5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@210386e0, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3d4d3fe7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@65f87a2c, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@51684e4a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6ce1f601, org.springframework.test.context.transaction.TransactionalTestExecutionListener@38875e7d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1e886a5b, org.springframework.test.context.event.EventPublishingTestExecutionListener@d816dde, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6e33c391, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6c451c9c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@31c269fd, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@372b0d86, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@47747fb9, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3113a37]
-15:42:40.251 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@66d23e4a testClass = QuerydslBasicTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@36ac8a63 testClass = QuerydslBasicTest, locations = '{}', classes = '{class study.querydsl.QuerydslApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@6b44435b, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6941827a, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@488eb7f2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3fa2213, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@25b2cfcb, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@64b0598], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
-15:42:40.395 [Test worker] DEBUG org.springframework.boot.ApplicationServletEnvironment - Activating profiles []
-15:42:40.396 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+  <testcase name="sort()" classname="study.querydsl.QuerydslBasicTest" time="0.813"/>
+  <system-out><![CDATA[16:30:48.910 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:30:48.939 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:30:49.004 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [study.querydsl.QuerydslBasicTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+16:30:49.022 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [study.querydsl.QuerydslBasicTest], using SpringBootContextLoader
+16:30:49.030 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [study.querydsl.QuerydslBasicTest]: class path resource [study/querydsl/QuerydslBasicTest-context.xml] does not exist
+16:30:49.031 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [study.querydsl.QuerydslBasicTest]: class path resource [study/querydsl/QuerydslBasicTestContext.groovy] does not exist
+16:30:49.031 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [study.querydsl.QuerydslBasicTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:30:49.032 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [study.querydsl.QuerydslBasicTest]: QuerydslBasicTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:30:49.097 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [study.querydsl.QuerydslBasicTest]
+16:30:49.202 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/kim-yulhee/Spring-Study/querydsl/build/classes/java/main/study/querydsl/QuerydslApplication.class]
+16:30:49.203 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration study.querydsl.QuerydslApplication for test class study.querydsl.QuerydslBasicTest
+16:30:49.393 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [study.querydsl.QuerydslBasicTest]: using defaults.
+16:30:49.394 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+16:30:49.428 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7728643a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@320e400, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5167268, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1cfd1875, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@28c0b664, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2c444798, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1af7f54a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6ebd78d1, org.springframework.test.context.event.EventPublishingTestExecutionListener@436390f4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4d157787, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@68ed96ca, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6d1310f6, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3228d990, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@54e7391d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@50b8ae8d]
+16:30:49.433 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@10b3df93 testClass = QuerydslBasicTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@ea27e34 testClass = QuerydslBasicTest, locations = '{}', classes = '{class study.querydsl.QuerydslApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@57eda880, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@338494fa, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@19ae6bb, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@24b6b8f6, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3b77a04f, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@e3b3b2f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+16:30:49.508 [Test worker] DEBUG org.springframework.boot.ApplicationServletEnvironment - Activating profiles []
+16:30:49.510 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -29,36 +28,36 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.6.2)
 
-2022-01-04 15:42:41.159  INFO 8417 --- [    Test worker] study.querydsl.QuerydslBasicTest         : Starting QuerydslBasicTest using Java 11.0.11 on gim-yulhuiui-MacBook-Pro.local with PID 8417 (started by kim-yulhee in /Users/kim-yulhee/Spring-Study/querydsl)
-2022-01-04 15:42:41.161  INFO 8417 --- [    Test worker] study.querydsl.QuerydslBasicTest         : No active profile set, falling back to default profiles: default
-2022-01-04 15:42:42.246  INFO 8417 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-01-04 15:42:42.273  INFO 8417 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
-2022-01-04 15:42:43.230  INFO 8417 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-01-04 15:42:43.325  INFO 8417 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
-2022-01-04 15:42:43.684  INFO 8417 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-01-04 15:42:43.924  INFO 8417 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-01-04 15:42:44.064  INFO 8417 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-01-04 15:42:44.127  INFO 8417 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2022-01-04 15:42:45.237 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
+2022-01-05 16:30:50.038  INFO 27432 --- [    Test worker] study.querydsl.QuerydslBasicTest         : Starting QuerydslBasicTest using Java 11.0.11 on gim-yulhuiui-MacBook-Pro.local with PID 27432 (started by kim-yulhee in /Users/kim-yulhee/Spring-Study/querydsl)
+2022-01-05 16:30:50.041  INFO 27432 --- [    Test worker] study.querydsl.QuerydslBasicTest         : No active profile set, falling back to default profiles: default
+2022-01-05 16:30:50.958  INFO 27432 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-05 16:30:50.984  INFO 27432 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+2022-01-05 16:30:51.633  INFO 27432 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-05 16:30:51.714  INFO 27432 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-01-05 16:30:51.986  INFO 27432 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-05 16:30:52.152  INFO 27432 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-05 16:30:52.273  INFO 27432 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-05 16:30:52.323  INFO 27432 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-05 16:30:53.211 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
     
     drop table if exists hello CASCADE 
-2022-01-04 15:42:45.241 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
+2022-01-05 16:30:53.221 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
     
     drop table if exists member CASCADE 
-2022-01-04 15:42:45.242 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
+2022-01-05 16:30:53.223 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
     
     drop table if exists team CASCADE 
-2022-01-04 15:42:45.244 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
+2022-01-05 16:30:53.227 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
     
     drop sequence if exists hibernate_sequence
-2022-01-04 15:42:45.254 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : create sequence hibernate_sequence start with 1 increment by 1
-2022-01-04 15:42:45.257 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
+2022-01-05 16:30:53.235 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : create sequence hibernate_sequence start with 1 increment by 1
+2022-01-05 16:30:53.238 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
     
     create table hello (
        id bigint not null,
         primary key (id)
     )
-2022-01-04 15:42:45.258 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
+2022-01-05 16:30:53.242 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
     
     create table member (
        member_id bigint not null,
@@ -67,37 +66,43 @@
         team_id bigint,
         primary key (member_id)
     )
-2022-01-04 15:42:45.261 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
+2022-01-05 16:30:53.248 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
     
     create table team (
        id bigint not null,
         name varchar(255),
         primary key (id)
     )
-2022-01-04 15:42:45.267 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
+2022-01-05 16:30:53.255 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
     
     alter table member 
        add constraint FKcjte2jn9pvo9ud2hyfgwcja0k 
        foreign key (team_id) 
        references team
-2022-01-04 15:42:45.277  INFO 8417 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-01-04 15:42:45.304  INFO 8417 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-01-04 15:42:45.714  WARN 8417 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-01-04 15:42:46.922  INFO 8417 --- [    Test worker] study.querydsl.QuerydslBasicTest         : Started QuerydslBasicTest in 6.523 seconds (JVM running for 8.728)
-2022-01-04 15:42:47.157  INFO 8417 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@66d23e4a testClass = QuerydslBasicTest, testInstance = study.querydsl.QuerydslBasicTest@761b9314, testMethod = startJPQL@QuerydslBasicTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@36ac8a63 testClass = QuerydslBasicTest, locations = '{}', classes = '{class study.querydsl.QuerydslApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@6b44435b, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6941827a, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@488eb7f2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3fa2213, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@25b2cfcb, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@64b0598], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@104392ba]; rollback [true]
-2022-01-04 15:42:47.346 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
+2022-01-05 16:30:53.262  INFO 27432 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-05 16:30:53.273  INFO 27432 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-05 16:30:53.572  WARN 27432 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-05 16:30:54.373  INFO 27432 --- [    Test worker] study.querydsl.QuerydslBasicTest         : Started QuerydslBasicTest in 4.86 seconds (JVM running for 7.226)
+2022-01-05 16:30:54.514  INFO 27432 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@10b3df93 testClass = QuerydslBasicTest, testInstance = study.querydsl.QuerydslBasicTest@a20898c, testMethod = sort@QuerydslBasicTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@ea27e34 testClass = QuerydslBasicTest, locations = '{}', classes = '{class study.querydsl.QuerydslApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@57eda880, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@338494fa, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@19ae6bb, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@24b6b8f6, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3b77a04f, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@e3b3b2f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@271a140c]; rollback [true]
+2022-01-05 16:30:54.654 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
     call next value for hibernate_sequence
-2022-01-04 15:42:47.391 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
+2022-01-05 16:30:54.722 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
     call next value for hibernate_sequence
-2022-01-04 15:42:47.392 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
+2022-01-05 16:30:54.724 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
     call next value for hibernate_sequence
-2022-01-04 15:42:47.396 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
+2022-01-05 16:30:54.726 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
     call next value for hibernate_sequence
-2022-01-04 15:42:47.404 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
+2022-01-05 16:30:54.727 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
     call next value for hibernate_sequence
-2022-01-04 15:42:47.405 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
+2022-01-05 16:30:54.736 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
     call next value for hibernate_sequence
-2022-01-04 15:42:47.618 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
+2022-01-05 16:30:54.741 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+2022-01-05 16:30:54.746 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+2022-01-05 16:30:54.750 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+2022-01-05 16:30:55.086 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
     /* insert study.querydsl.entity.Team
         */ insert 
         into
@@ -105,7 +110,7 @@
             (name, id) 
         values
             (?, ?)
-2022-01-04 15:42:47.628 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
+2022-01-05 16:30:55.091 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
     /* insert study.querydsl.entity.Team
         */ insert 
         into
@@ -113,7 +118,7 @@
             (name, id) 
         values
             (?, ?)
-2022-01-04 15:42:47.632 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
+2022-01-05 16:30:55.093 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
     /* insert study.querydsl.entity.Member
         */ insert 
         into
@@ -121,7 +126,7 @@
             (age, team_id, username, member_id) 
         values
             (?, ?, ?, ?)
-2022-01-04 15:42:47.637 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
+2022-01-05 16:30:55.096 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
     /* insert study.querydsl.entity.Member
         */ insert 
         into
@@ -129,7 +134,7 @@
             (age, team_id, username, member_id) 
         values
             (?, ?, ?, ?)
-2022-01-04 15:42:47.642 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
+2022-01-05 16:30:55.098 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
     /* insert study.querydsl.entity.Member
         */ insert 
         into
@@ -137,7 +142,7 @@
             (age, team_id, username, member_id) 
         values
             (?, ?, ?, ?)
-2022-01-04 15:42:47.648 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
+2022-01-05 16:30:55.101 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
     /* insert study.querydsl.entity.Member
         */ insert 
         into
@@ -145,52 +150,7 @@
             (age, team_id, username, member_id) 
         values
             (?, ?, ?, ?)
-2022-01-04 15:42:47.662 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
-    /* select
-        m 
-    from
-        Member m 
-    where
-        m.username = :username */ select
-            member0_.member_id as member_i1_1_,
-            member0_.age as age2_1_,
-            member0_.team_id as team_id4_1_,
-            member0_.username as username3_1_ 
-        from
-            member member0_ 
-        where
-            member0_.username=?
-2022-01-04 15:42:47.829  INFO 8417 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@66d23e4a testClass = QuerydslBasicTest, testInstance = study.querydsl.QuerydslBasicTest@761b9314, testMethod = startJPQL@QuerydslBasicTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@36ac8a63 testClass = QuerydslBasicTest, locations = '{}', classes = '{class study.querydsl.QuerydslApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@6b44435b, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6941827a, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@488eb7f2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3fa2213, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@25b2cfcb, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@64b0598], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
-2022-01-04 15:42:47.846  INFO 8417 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@66d23e4a testClass = QuerydslBasicTest, testInstance = study.querydsl.QuerydslBasicTest@1bc1aa9e, testMethod = startQuerydsl@QuerydslBasicTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@36ac8a63 testClass = QuerydslBasicTest, locations = '{}', classes = '{class study.querydsl.QuerydslApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@6b44435b, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6941827a, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@488eb7f2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3fa2213, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@25b2cfcb, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@64b0598], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@104392ba]; rollback [true]
-2022-01-04 15:42:47.855 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
-    call next value for hibernate_sequence
-2022-01-04 15:42:47.869 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
-    call next value for hibernate_sequence
-2022-01-04 15:42:47.875 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
-    call next value for hibernate_sequence
-2022-01-04 15:42:47.882 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
-    call next value for hibernate_sequence
-2022-01-04 15:42:47.895 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
-    call next value for hibernate_sequence
-2022-01-04 15:42:47.903 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
-    call next value for hibernate_sequence
-2022-01-04 15:42:48.092 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
-    /* insert study.querydsl.entity.Team
-        */ insert 
-        into
-            team
-            (name, id) 
-        values
-            (?, ?)
-2022-01-04 15:42:48.094 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
-    /* insert study.querydsl.entity.Team
-        */ insert 
-        into
-            team
-            (name, id) 
-        values
-            (?, ?)
-2022-01-04 15:42:48.095 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
+2022-01-05 16:30:55.103 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
     /* insert study.querydsl.entity.Member
         */ insert 
         into
@@ -198,7 +158,7 @@
             (age, team_id, username, member_id) 
         values
             (?, ?, ?, ?)
-2022-01-04 15:42:48.097 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
+2022-01-05 16:30:55.105 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
     /* insert study.querydsl.entity.Member
         */ insert 
         into
@@ -206,7 +166,7 @@
             (age, team_id, username, member_id) 
         values
             (?, ?, ?, ?)
-2022-01-04 15:42:48.105 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
+2022-01-05 16:30:55.106 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
     /* insert study.querydsl.entity.Member
         */ insert 
         into
@@ -214,21 +174,16 @@
             (age, team_id, username, member_id) 
         values
             (?, ?, ?, ?)
-2022-01-04 15:42:48.107 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
-    /* insert study.querydsl.entity.Member
-        */ insert 
-        into
-            member
-            (age, team_id, username, member_id) 
-        values
-            (?, ?, ?, ?)
-2022-01-04 15:42:48.109 DEBUG 8417 --- [    Test worker] org.hibernate.SQL                        : 
+2022-01-05 16:30:55.113 DEBUG 27432 --- [    Test worker] org.hibernate.SQL                        : 
     /* select
         member1 
     from
         Member member1 
     where
-        member1.username = ?1 */ select
+        member1.age = ?1 
+    order by
+        member1.age desc,
+        member1.username asc nulls last */ select
             member0_.member_id as member_i1_1_,
             member0_.age as age2_1_,
             member0_.team_id as team_id4_1_,
@@ -236,8 +191,11 @@
         from
             member member0_ 
         where
-            member0_.username=?
-2022-01-04 15:42:48.121  INFO 8417 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@66d23e4a testClass = QuerydslBasicTest, testInstance = study.querydsl.QuerydslBasicTest@1bc1aa9e, testMethod = startQuerydsl@QuerydslBasicTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@36ac8a63 testClass = QuerydslBasicTest, locations = '{}', classes = '{class study.querydsl.QuerydslApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@6b44435b, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6941827a, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@488eb7f2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3fa2213, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@25b2cfcb, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@64b0598], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+            member0_.age=? 
+        order by
+            member0_.age desc,
+            member0_.username asc nulls last
+2022-01-05 16:30:55.242  INFO 27432 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@10b3df93 testClass = QuerydslBasicTest, testInstance = study.querydsl.QuerydslBasicTest@a20898c, testMethod = sort@QuerydslBasicTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@ea27e34 testClass = QuerydslBasicTest, locations = '{}', classes = '{class study.querydsl.QuerydslApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@57eda880, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@338494fa, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@19ae6bb, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@24b6b8f6, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3b77a04f, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@e3b3b2f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
